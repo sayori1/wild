@@ -19,8 +19,6 @@ class GameObject{
         GameObject.idacc+=1
     }
     update(){
-        if(this.paused)
-            return
         this.Update()
         for(var i in this.childs){
             if(!this.childs[i].paused)this.childs[i].update()
